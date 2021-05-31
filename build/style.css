@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #242424;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-item {
+  margin: 1em;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.font-1 {
+  font-family: "Roboto", sans-serif;
+}
+
+/* card-1 */
+.card-1 {
+  background-image: url("https://picsum.photos/250/350?random=24397");
+  height: 350px;
+  width: 250px;
+  display: flex;
+  outline: 3px solid white;
+  outline-offset: 0px;
+  transition: outline-offset 0.6s;
+}
+.card-1 .card-title {
+  margin: auto;
+  color: #fff;
+  text-shadow: #000 3px 0 3px;
+  text-transform: uppercase;
+}
+.card-1:hover {
+  filter: grayscale(0.4);
+  transition: outline-offset 0.6s;
+  outline: 3px solid white;
+  outline-offset: -10px;
+}
+
+/* card-2 */
+.card-2 {
+  background-image: url("https://picsum.photos/250/350?random=24396");
+  height: 350px;
+  width: 250px;
+  outline: 3px solid white;
+  outline-offset: 0px;
+  transition: outline-offset 0.6s;
+}
+.card-2 .bloc {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.card-2 h1 {
+  text-align: center;
+  color: #fff;
+  text-shadow: #000 3px 0 3px;
+  padding: 20px;
+}
+.card-2 .btn-zone {
+  display: flex;
+}
+.card-2 .btn {
+  opacity: 0;
+  margin: auto;
+  font-weight: bold;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+  display: inline-block;
+}
+.card-2:hover {
+  background-image: linear-gradient(transparent, black), url("https://picsum.photos/250/350?random=24396");
+}
+.card-2:hover .bloc {
+  padding-top: 120px;
+  transition: padding-top 0.5s;
+}
+.card-2:hover .btn {
+  opacity: 1;
+  transition: opacity 0.6s;
+  transition-delay: 0.2s;
+}
+
+/* card-3 */
+.card-3 {
+  position: relative;
+}
+.card-3 img {
+  outline: 3px solid white;
+  transition: outline-offset 0.6s;
+}
+.card-3 .card-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card-3 .card-item .card-title {
+  margin: auto;
+  color: #fff;
+  text-shadow: #000 3px 0 3px;
+  text-align: center;
+}
+.card-3 .card-item .btn {
+  opacity: 0;
+  transition: opacity 0.6s;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+  display: inline-block;
+}
+.card-3:hover img {
+  outline: 3px solid #fff;
+  outline-offset: -10px;
+  filter: grayscale(0.6);
+}
+.card-3:hover .btn {
+  opacity: 1;
+  transition: opacity 0.6s;
+  transition-delay: opacity 6s;
+}
+
+/* card-4 */
+.card-4 {
+  position: relative;
+}
+.card-4 .shadow {
+  opacity: 0;
+  transition: opacity 0.6s;
+  position: absolute;
+  height: 350px;
+  width: 250px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+.card-4:hover .shadow {
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+
+/*# sourceMappingURL=style.css.map */

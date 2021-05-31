@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+$color-1: #40ba37;
+$color-2: #1c8314;
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #242424;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff
+}
+
+
+.container{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.container-item{
+    margin: 1em;
+}
+
+    a,
+    a:visited,
+    a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+.font-1{
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+
+/* card-1 */
+
+.card-1{
+    
+    background-image: url('https://picsum.photos/250/350?random=24397');
+    height: 350px;
+    width: 250px;
+    display:flex;
+
+    .card-title{
+        margin: auto;
+        color: #fff;
+        text-shadow: #000 3px 0 3px;
+        text-transform: uppercase;
+    }
+        outline: 3px solid white;
+        outline-offset: 0px;
+        transition: outline-offset .6s;
+
+    &:hover{
+        filter: grayscale(0.4);
+        transition: outline-offset .6s;
+
+        outline: 3px solid white;
+        outline-offset: -10px;
+    }
+}
+
+/* card-2 */
+.card-2{
+    background-image: url("https://picsum.photos/250/350?random=24396");
+    height: 350px;
+    width: 250px;
+
+    outline: 3px solid white;
+    outline-offset: 0px;
+    transition: outline-offset .6s;
+
+    .bloc {
+        //border: dashed blue;
+        padding-top:200px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        text-align: center;
+        color: #fff;
+        text-shadow: #000 3px 0 3px;
+        padding: 20px;
+    }
+
+    .btn-zone{
+        display: flex;
+    }
+
+    .btn {
+        opacity: 0;
+        //transition: opacity .6s;
+        margin:auto;
+        font-weight: bold;
+        padding: 1em;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 2px solid #fff;
+        display: inline-block;
+    }
+
+    &:hover{
+        //filter: grayscale(0.3);
+        background-image: linear-gradient(transparent, rgba(0, 0, 0, 1)), url("https://picsum.photos/250/350?random=24396");
+        //outline: 3px solid orange;
+        //outline-offset: -10px;
+        //transition: outline-offset .6s;
+        .bloc{
+            padding-top:120px;
+            transition: padding-top .5s;
+        }
+
+        .btn{
+            opacity: 1;
+            transition: opacity .6s;
+            transition-delay: .2s;
+        }
+    }
+}
+
+/* card-3 */
+
+.card-3{
+    position: relative;
+    img{
+        outline: 3px solid white;
+        //outline-offset: 0px;
+        transition: outline-offset .6s;
+    }
+    .card-item{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+
+        display:flex;
+        //background-color: orange;
+        flex-direction: column;
+        //text-align: center;
+
+        .card-title{
+            margin: auto;
+            color: #fff;
+            text-shadow: #000 3px 0 3px;
+            text-align: center;
+
+        }
+
+        .btn{
+            opacity: 0;
+            transition: opacity .6s;
+
+            font-weight: bold;
+            margin-top: 2em;
+            padding: 1em;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid #fff;
+            display: inline-block;
+        }
+
+    }
+
+    &:hover {
+
+        img{
+            outline: 3px solid #fff;
+            outline-offset: -10px;
+            filter: grayscale(0.6);
+            //transition: filter .6s;
+        }
+
+        .btn{
+            opacity:1;
+            transition: opacity .6s;
+            transition-delay: opacity 6s;
+        }
+
+    }
+
+}
+
+/* card-4 */
+
+.card-4{
+    position: relative;
+    
+    .shadow{
+        opacity:0;
+        transition: opacity .6s;
+        position: absolute;
+        height: 350px;
+        width: 250px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    }
+
+    &:hover{
+        .shadow{
+            opacity:1;
+            transition: opacity .6s;
+        }
+    }
+}
